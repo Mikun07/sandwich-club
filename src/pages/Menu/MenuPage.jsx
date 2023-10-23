@@ -14,6 +14,14 @@ import ChickenWings from "../../assets/img/chicken-wings.jpeg";
 import PotatoSalad from "../../assets/img/potato-salad.jpeg";
 import FrenchFries from "../../assets/img/french-fries.jpeg";
 import YamFries from "../../assets/img/yam-fries.jpeg";
+import Drink1 from "../../assets/img/apple-juice.jpeg";
+import Drink2 from "../../assets/img/lemonade.jpeg";
+import Drink3 from "../../assets/img/banana-smoothie.jpeg";
+import Drink4 from "../../assets/img/orange-juice.jpeg";
+import Drink5 from "../../assets/img/watermelon-smoothie.jpeg";
+import Drink6 from "../../assets/img/passion-mojito-drink.jpeg";
+import Drink7 from "../../assets/img/mango-pineapple-punch.jpeg";
+
 import VegetableSalad from "../../assets/img/vegetable-salad.jpeg";
 
 function MenuPage() {
@@ -99,7 +107,7 @@ function MenuPage() {
                 Rating={5}
                 Price="25,000"
               />
-               <BestOfferCard
+              <BestOfferCard
                 Img={PotatoSalad}
                 Food="Potato Salad"
                 Rating={4}
@@ -242,6 +250,79 @@ function MenuPage() {
                 Price="2,000"
                 Food="vegetable Salad"
                 Description="1 portion of vegetable salad"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="py-[50px] px-4">
+          <div className=" flex flex-col gap-3 mt-10">
+            <div className=" flex justify-between">
+              <h2 className="font-semibold capitalize text-[#570303]">
+                Drinks
+              </h2>
+
+              <div className="flex gap-2">
+                <button
+                  onClick={scrollLeft}
+                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
+                >
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button
+                  onClick={scrollRight}
+                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
+                >
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div
+              ref={quoteBoxRef}
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
+            >
+              <SidesCard
+                Img={Drink1}
+                Price="1,500"
+                Food="Apple Juice"
+                Description="1 liter of Apple juice"
+              />
+              <SidesCard
+                Img={Drink2}
+                Price="1,500"
+                Food="Watermelon Lemonade"
+                Description="1 liter of Watermelon Lemonade"
+              />
+              <SidesCard
+                Img={Drink3}
+                Price="2,500"
+                Food="Banana Smoothie"
+                Description="1 liter of Banana Smoothie"
+              />
+              <SidesCard
+                Img={Drink4}
+                Price="1,500"
+                Food="Orange Juice"
+                Description="1 liter of Orange Juice"
+              />
+              <SidesCard
+                Img={Drink5}
+                Price="2,500"
+                Food="Watermelon Smoothie"
+                Description="1 liter of Watermelon Smoothie"
+              />
+              <SidesCard
+                Img={Drink6}
+                Price="3,500"
+                Food="Passion Mojito drink"
+                Description="1 liter of passion mojito drink"
+              />
+              <SidesCard
+                Img={Drink7}
+                Price="3,500"
+                Food="mango pineapple punch"
+                Description="1 liter of mango pineapple punch"
               />
             </div>
           </div>
