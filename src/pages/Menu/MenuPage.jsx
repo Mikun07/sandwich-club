@@ -78,6 +78,12 @@ function MenuPage() {
                 Price="1,500"
               />
               <BestOfferCard
+                Img={Drink1}
+                Food="Apple Juice"
+                Rating={4}
+                Price="1,500"
+              />
+              <BestOfferCard
                 Img={SS}
                 Food="Seafood sandwich"
                 Rating={5}
@@ -88,6 +94,12 @@ function MenuPage() {
                 Food="Deluxe Platter"
                 Rating={5}
                 Price="15,500"
+              />
+               <BestOfferCard
+                Img={Drink7}
+                Food="mango pineapple punch"
+                Rating={5}
+                Price="3,500"
               />
               <BestOfferCard
                 Img={ChickenWings}
@@ -101,6 +113,12 @@ function MenuPage() {
                 Rating={4}
                 Price="5,000"
               />
+               <BestOfferCard
+                Img={Drink3}
+                Food="banana smoothie"
+                Rating={5}
+                Price="2,500"
+              />
               <BestOfferCard
                 Img={SliderPlatter}
                 Food="Slider Platter"
@@ -112,6 +130,12 @@ function MenuPage() {
                 Food="Potato Salad"
                 Rating={4}
                 Price="25,000"
+              />
+               <BestOfferCard
+                Img={Drink5}
+                Food="Watermelon smoothie"
+                Rating={4}
+                Price="2,500"
               />
               <BestOfferCard
                 Img={ES}
@@ -327,7 +351,7 @@ function MenuPage() {
             </div>
           </div>
         </div>
-        
+
       </div>
     </>
   );
