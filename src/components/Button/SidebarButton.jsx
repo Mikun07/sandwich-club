@@ -1,9 +1,44 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
 
+
 function SidebarButton() {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const menu = [
+    {
+      name: "Home",
+      link: "/menu",
+      icon: "home",
+    },
+    {
+      name: "Order",
+      link: "/order",
+      icon: "create",
+    },
+    {
+      name: "View Order",
+      link: "/vieworder",
+      icon: "cart",
+    },
+    {
+      name: "Saved",
+      link: "/saved",
+      icon: "heart-outline",
+    },
+    {
+      name: "Profile",
+      link: "/profile",
+      icon: "person-circle-outline",
+    },
+    {
+      name: "Help",
+      link: "/help",
+      icon: "help-circle-outline",
+    },
+  ];
+
   return (
     <>
       <div>
@@ -25,6 +60,27 @@ function SidebarButton() {
             </div>
 
             <Avatar />
+
+            <ul className="flex flex-col gap-6 mt-12">
+                  {menu.map(({ id, link, name, icon}) => (
+                    <li key={id} className="flex items-center justify-center">
+                      <NavLink
+                        onClick={() => setNav(!nav)}
+                        to={link}
+                        className={({ isActive, isPending }) => {
+                          return isPending
+                            ? ""
+                            : isActive
+                            ? "flex items-center font-bold gap-6 text-[#F8F0E1] bg-[#FAAC14] p-2 cursor-pointer w-full border-l-[#570303] border-l-4"
+                            : "flex items-center font-bold gap-6 hover:bg-[#FAAC14] p-2 cursor-pointer w-full hover:border-l-[#570303] hover:border-l-2";
+                        }}
+                      >
+                        <ion-icon name={icon}></ion-icon>
+                        {name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
           </div>
         )}
       </div>

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Header from "../../components/Header/Header";
 import BestOfferCard from "../../components/Card/BestOfferCard";
 import CS from "../../assets/img/Chicken-sandwich.jpeg";
-import BBQS from "../../assets/img/BBQ-sandwich.jpeg";
+import BBQ from "../../assets/img/BBQ-sandwich.jpeg";
 import ES from "../../assets/img/egg-sandwich.jpeg";
 import SS from "../../assets/img/Seafood-sandwich.jpeg";
 import Platter from "../../assets/img/platter1.jpeg";
@@ -11,11 +11,10 @@ import FoodCard from "../../components/Card/FoodCard";
 import SidesCard from "../../components/Card/SidesCard";
 import Chicken from "../../assets/img/chicken.jpeg";
 import ChickenWings from "../../assets/img/chicken-wings.jpeg";
-import PotatoSalad from "../../assets/img/potato-salad.jpeg"
-import FrenchFries from "../../assets/img/french-fries.jpeg"
-import YamFries from "../../assets/img/yam-fries.jpeg"
-import VegetableSalad from "../../assets/img/vegetable-salad.jpeg"
-
+import PotatoSalad from "../../assets/img/potato-salad.jpeg";
+import FrenchFries from "../../assets/img/french-fries.jpeg";
+import YamFries from "../../assets/img/yam-fries.jpeg";
+import VegetableSalad from "../../assets/img/vegetable-salad.jpeg";
 
 function MenuPage() {
   const quoteBoxRef = useRef(null);
@@ -62,25 +61,34 @@ function MenuPage() {
                 Img={CS}
                 Food="Chicken Sandwich"
                 Rating={4}
-                Description="Visiting the best tourist areas chosen by the audience."
                 Price="3,500"
+              />
+              <BestOfferCard
+                Img={FrenchFries}
+                Food="French Fries"
+                Rating={4}
+                Price="1,500"
               />
               <BestOfferCard
                 Img={SS}
                 Food="Seafood sandwich"
                 Rating={5}
-                Description="Visiting the best tourist areas chosen by the audience."
-                Price="3,500"
+                Price="7,500"
               />
               <BestOfferCard
                 Img={Platter}
                 Food="Deluxe Platter"
                 Rating={5}
-                Description="Visiting the best tourist areas chosen by the audience."
-                Price="15,000"
+                Price="15,500"
               />
               <BestOfferCard
-                Img={BBQS}
+                Img={ChickenWings}
+                Food="Chicken Wings"
+                Rating={5}
+                Price="4,500"
+              />
+              <BestOfferCard
+                Img={BBQ}
                 Food="BBQ Grilled Sandwich"
                 Rating={4}
                 Price="5,000"
@@ -91,11 +99,16 @@ function MenuPage() {
                 Rating={5}
                 Price="25,000"
               />
+               <BestOfferCard
+                Img={PotatoSalad}
+                Food="Potato Salad"
+                Rating={4}
+                Price="25,000"
+              />
               <BestOfferCard
                 Img={ES}
-                Food="Deluxe Platter"
+                Food="Egg sandwich"
                 Rating={5}
-                Description="Visiting the best tourist areas chosen by the audience."
                 Price="4,500"
               />
             </div>
@@ -142,7 +155,7 @@ function MenuPage() {
                 Price="15,500"
               />
               <FoodCard
-                Img={BBQS}
+                Img={BBQ}
                 Food="BBQ Grilled Cheese sandwich"
                 Description="3 BBQ Grilled Cheese sandwich"
                 Price="5,000"
@@ -206,19 +219,19 @@ function MenuPage() {
                 Food="Fries"
                 Description="1 portion of fries"
               />
-               <SidesCard
+              <SidesCard
                 Img={ChickenWings}
                 Price="4,500"
                 Food="Spicy Chicken Wings"
                 Description="5 pieces of spicy chicken wings"
               />
-               <SidesCard
+              <SidesCard
                 Img={YamFries}
                 Price="1,500"
                 Food="Yam Fries"
                 Description="1 portion of fries"
               />
-               <SidesCard
+              <SidesCard
                 Img={PotatoSalad}
                 Price="3,000"
                 Food="Potato Salad"
