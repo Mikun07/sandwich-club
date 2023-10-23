@@ -3,8 +3,8 @@ import React from "react";
 function BestOfferCard({ Img, Price, Rating, Food,}) {
   return (
     <>
-      <div className="bg-[#F8F0E1] py-1 px-2 rounded-lg flex gap-2 lg:w-[330px] w-[500px] shadow-sm shadow-gray-300">
-        <div className="w-[150px] h-full">
+      <div className="bg-[#F8F0E1] py-1 px-2 rounded-lg flex gap-2 items-center w-[330px] h-[160px] shadow-sm shadow-gray-300">
+        <div className="w-[150px] h-[150px]">
           <img
             src={Img}
             alt=""

@@ -8,6 +8,14 @@ import SS from "../../assets/img/Seafood-sandwich.jpeg";
 import Platter from "../../assets/img/platter1.jpeg";
 import SliderPlatter from "../../assets/img/slider-platter.jpeg";
 import FoodCard from "../../components/Card/FoodCard";
+import SidesCard from "../../components/Card/SidesCard";
+import Chicken from "../../assets/img/chicken.jpeg";
+import ChickenWings from "../../assets/img/chicken-wings.jpeg";
+import PotatoSalad from "../../assets/img/potato-salad.jpeg"
+import FrenchFries from "../../assets/img/french-fries.jpeg"
+import YamFries from "../../assets/img/yam-fries.jpeg"
+import VegetableSalad from "../../assets/img/vegetable-salad.jpeg"
+
 
 function MenuPage() {
   const quoteBoxRef = useRef(null);
@@ -48,7 +56,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex gap-6 py-4 h-40 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
             >
               <BestOfferCard
                 Img={CS}
@@ -119,7 +127,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex h-[265px] gap-6 py-2 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-2 overflow-x-auto"
             >
               <FoodCard
                 Img={CS}
@@ -161,6 +169,70 @@ function MenuPage() {
           </div>
         </div>
 
+        <div className="pt-[50px] px-4">
+          <div className=" flex flex-col gap-3 mt-10">
+            <div className=" flex justify-between">
+              <h2 className="font-semibold capitalize text-[#570303]">Sides</h2>
+
+              <div className="flex gap-2">
+                <button
+                  onClick={scrollLeft}
+                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
+                >
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button
+                  onClick={scrollRight}
+                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
+                >
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div
+              ref={quoteBoxRef}
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
+            >
+              <SidesCard
+                Img={Chicken}
+                Price="4,500"
+                Food="Crispy chicken"
+                Description="5 pieces of crispy chicken"
+              />
+              <SidesCard
+                Img={FrenchFries}
+                Price="1,500"
+                Food="Fries"
+                Description="1 portion of fries"
+              />
+               <SidesCard
+                Img={ChickenWings}
+                Price="4,500"
+                Food="Spicy Chicken Wings"
+                Description="5 pieces of spicy chicken wings"
+              />
+               <SidesCard
+                Img={YamFries}
+                Price="1,500"
+                Food="Yam Fries"
+                Description="1 portion of fries"
+              />
+               <SidesCard
+                Img={PotatoSalad}
+                Price="3,000"
+                Food="Potato Salad"
+                Description="1 portion of potato salad"
+              />
+              <SidesCard
+                Img={VegetableSalad}
+                Price="2,000"
+                Food="vegetable Salad"
+                Description="1 portion of vegetable salad"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
