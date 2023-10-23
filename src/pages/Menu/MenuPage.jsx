@@ -44,21 +44,6 @@ function MenuPage() {
               <h2 className="font-semibold capitalize text-[#570303]">
                 Best Offers
               </h2>
-
-              <div className="flex gap-2">
-                <button
-                  onClick={scrollLeft}
-                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
-                >
-                  <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <button
-                  onClick={scrollRight}
-                  className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
-                >
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div>
             </div>
 
             <div
@@ -154,7 +139,7 @@ function MenuPage() {
                 Sandwich
               </h2>
 
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <button
                   onClick={scrollLeft}
                   className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
@@ -167,7 +152,7 @@ function MenuPage() {
                 >
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div
@@ -219,7 +204,7 @@ function MenuPage() {
             <div className=" flex justify-between">
               <h2 className="font-semibold capitalize text-[#570303]">Sides</h2>
 
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <button
                   onClick={scrollLeft}
                   className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
@@ -232,7 +217,7 @@ function MenuPage() {
                 >
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div
@@ -286,7 +271,7 @@ function MenuPage() {
                 Drinks
               </h2>
 
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                 <button
                   onClick={scrollLeft}
                   className="flex cursor-pointer shadow-sm shadow-[#570303] items-center justify-center h-[25px] w-[25px] bg-transparent rounded-md border-[1px] border-[#570303] hover:border-none hover:bg-[#570303] hover:text-white"
@@ -299,7 +284,7 @@ function MenuPage() {
                 >
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             <div
