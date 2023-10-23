@@ -49,7 +49,7 @@ function LandingPage() {
           </div>
           <div className="h-20 bg-[#FAE9C7] text-[#570303] absolute flex w-full bottom-0 justify-center gap-20 px-6 py-3">
             <button
-              onClick={() => navigate("")}
+              onClick={() => navigate("/menu")}
               className="flex flex-col justify-center items-center capitalize font-bold text-lg"
             >
               <ion-icon name="menu" size="large"></ion-icon>
