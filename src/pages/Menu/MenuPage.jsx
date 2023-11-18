@@ -48,7 +48,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto custom__scrollbar"
             >
               <BestOfferCard
                 Img={CS}
@@ -157,7 +157,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex gap-6 py-2 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-2 overflow-x-auto custom__scrollbar"
             >
               <FoodCard
                 Img={CS}
@@ -222,7 +222,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto custom__scrollbar"
             >
               <SidesCard
                 Img={Chicken}
@@ -289,7 +289,7 @@ function MenuPage() {
 
             <div
               ref={quoteBoxRef}
-              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto"
+              className="bg-transparent px-3 flex gap-6 py-4 overflow-x-auto custom__scrollbar"
             >
               <SidesCard
                 Img={Drink1}
